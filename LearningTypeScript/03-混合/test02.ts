@@ -1,22 +1,17 @@
-class Animal {
-    eat() {
-        // do something
-    }
-}
 
-class Mammal  {
-    breathe() ： string {
+class Mammal2  {
+    breathe() : string  {
         return "I'm alive!";
     }
 }
 
-class WingedAnimal extends Animal {
-    fly() {
-        // do something
+class WingedAnimal2 {
+    fly() : string {
+        return "I can fly";
     }
 }
 
-// 错误子类只能继继承一个父类
-class Bat extends  WingedAnimal, Mammal {
-
+class Bat2 implements  WingedAnimal2, Mammal2 {
+    fly: () => string;
+    breathe : ()=> string;
 }
